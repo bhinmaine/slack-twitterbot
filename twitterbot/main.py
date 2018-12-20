@@ -22,5 +22,5 @@ api = twitter.Api(consumer_key="{}".format(TWITTER_CONSUMER_KEY),
     access_token_secret="{}".format(TWITTER_ACCESS_SECRET_TOKEN)
 )
 def receive(event, context):
-    print("Got data: {}".format(event))
+    #print("Got data: {}".format(event))
     print(api.VerifyCredentials())
