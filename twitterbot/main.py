@@ -17,10 +17,10 @@ TWEET_TRACKING_TABLE = os.environ['TWEET_TRACKING_TABLE']
 
 # twitter api object
 api = twitter.Api(consumer_key="{}".format(TWITTER_CONSUMER_KEY),
-                      consumer_secret="{}".format(TWITTER_CONSUMER_SECRET),
-                      access_token_key="{}".format(TWITTER_ACCESS_TOKEN),
-                      access_token_secret="{}".format(TWITTER_ACCESS_SECRET_TOKEN)
-
+    consumer_secret="{}".format(TWITTER_CONSUMER_SECRET),
+    access_token_key="{}".format(TWITTER_ACCESS_TOKEN),
+    access_token_secret="{}".format(TWITTER_ACCESS_SECRET_TOKEN)
+)
 def receive(event, context):
     data = json.loads(event['body'])
     print("Got data: {}".format(data))
